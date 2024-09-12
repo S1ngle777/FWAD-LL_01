@@ -3,6 +3,7 @@
 - [Лабораторная работа №1](#лабораторная-работа-1-основы-http)
     - [Задания](#задания)
     - [Примеры использования](#примеры-использования)
+    - [Список использованных источников](#список-использованных-источников)
 
 ## Задания
 
@@ -89,6 +90,8 @@ _Примечание к заданию 3_:
    - Какие заголовки были отправлены в ответе? `keep-alive`, `text/plain;charset=UTF-8`, `Thu, 12 Sep 2024 17:18:00 GMT`,
 `nginx/1.24.0 (Ubuntu)`, `chunked`
 
+![image](https://github.com/user-attachments/assets/c0ee8c0c-fd12-4224-801c-8e6d8e54748e)
+
    - Какой метод HTTP был использован для отправки запроса? `POST`
    - Какие заголовки были отправлены в запросе? 
 ![image](https://github.com/user-attachments/assets/a4d515c6-c533-46df-8043-4b6935dfc1ae)
@@ -158,5 +161,34 @@ Content-Type: application/json
 
 ### Задание №3. Дополнительное задание. HTTP_Quest
 
+![image](https://github.com/user-attachments/assets/6d60bb74-521a-4b10-8389-1e78b99ff44d)
 
 
+```http
+curl -X POST http://sandbox.usm.md/quest/login  -H "Authorization: Bearer BwgOPAERI0U9ESsOCjU="
+```
+
+![image](https://github.com/user-attachments/assets/68fd7763-0610-49df-a8a2-804e0b490a97)
+
+```http
+curl -X PUT http://sandbox.usm.md/quest/age -H "Authorization: Bearer BwgOPAERI0U9ESsOCjU=" -d "age=21"
+```
+
+![image](https://github.com/user-attachments/assets/a2168116-e134-4805-a8ee-eef6dc8b4eca)
+
+![image](https://github.com/user-attachments/assets/061edf0f-2fce-46ab-a76d-89e2b3acb4e8)
+
+<details>
+<summary>Секретное слово</summary>
+JyUMHgw9AkUCBBYbAkBEfl4=
+</details>
+
+## Список использованных источников
+
+https://github.com/MSU-Courses/frameworks-for-web-development/blob/main/ru/01_http_basics/01_01_introduction.md
+
+https://github.com/MSU-Courses/frameworks-for-web-development/blob/main/ru/01_http_basics/01_02_client_server.md
+
+https://github.com/MSU-Courses/frameworks-for-web-development/blob/main/ru/01_http_basics/01_03_http.md
+
+https://github.com/MSU-Courses/frameworks-for-web-development/blob/main/ru/01_http_basics/01_04_curl.md

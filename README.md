@@ -120,7 +120,7 @@ model=Corolla&make=Toyota&year=2020
 ```
 `PUT`
 ```http
-POST /cars/1 HTTP/1.1
+PUT /cars/1 HTTP/1.1
 Host: sandbox.com
 User-Agent: Nichita Neboga
 Content-Type: application/json
